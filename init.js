@@ -42,6 +42,7 @@ async function logout() {
 
 // write unordered list in index
 function display(bookmark) {
+	// needs to be type node
     //document.getElementById('items').appendChild(bookmark);
 console.log('display function called');
 }

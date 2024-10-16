@@ -1,5 +1,5 @@
 <!-- only new thing is gatherData() button -->
-<!-- ToDo : examine n3-browserify dependency -->
+<!-- deployed to serverproject.de/dir -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,8 +34,11 @@
             <ul id="items"></ul>
             <button id="integrity" type="button" onclick="gatherData()">read from local file</button>
         </div>
-
-        <script src="https://cdn.jsdelivr.net/npm/n3-browserify@1.11.1"></script>
+<!-- do think we need 1. in any case
+     2. auth from inrupt
+     3. solid high level resource
+     4. main low level resource -->
+        <script src="https://cdn.jsdelivr.net/npm/rdflib@2.2.35/dist/rdflib.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@inrupt/solid-client-authn-browser@2.2.6/dist/solid-client-authn.bundle.js"></script>
         <script src="work.js"></script>
         <script src="init.js"></script>

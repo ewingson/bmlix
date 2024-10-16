@@ -1,4 +1,5 @@
 // main template solid-work document_resource
+// ToDo : where declare vars, examine async
 
 let user, bookmarksContainerUrl, bookmarks, bookmark;
 
@@ -70,7 +71,6 @@ console.log('function called');
 const bookmarks = ['eins', 'zwei', 'drei'];
 // loop over array
 for (i = 0; i < 3; i++) {
-
 var bookmark = bookmarks[i];
 display(bookmark);
 }
