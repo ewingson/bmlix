@@ -66,7 +66,7 @@ async function performLogout() {
 function gatherData() { 
 
 var i;
-console.log('function called');
+console.log('function gatherData called');
 // declare array bookmarks
 const bookmarks = ['eins', 'zwei', 'drei'];
 // loop over array

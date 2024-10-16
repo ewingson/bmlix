@@ -19,8 +19,8 @@
         <div id="auth-guest" hidden>
             <p>Hi there!</p>
             <p>
-                this microapp writes bookmarks into a pod. You can look at the source code and learn how to use it in
-                <a href="https://github.com/ewingson/bmlix" target="_blank">the repository</a>.
+                this microapp writes bookmarks into a pod. you can look into the source code
+                <a href="https://github.com/ewingson/bmlix" target="_blank">here</a>.
             </p>
 
             <button id="login-button" type="button" onclick="login()">Log in with Solid</button>
@@ -34,11 +34,14 @@
             <ul id="items"></ul>
             <button id="integrity" type="button" onclick="gatherData()">read from local file</button>
         </div>
+        
 <!-- do think we need 1. in any case
-     2. auth from inrupt
-     3. solid high level resource
-     4. main low level resource -->
+	 2. to parse n3
+     3. auth from inrupt
+     4. solid high level resource
+     5. main low level resource -->
         <script src="https://cdn.jsdelivr.net/npm/rdflib@2.2.35/dist/rdflib.min.js"></script>
+        <script src="https://unpkg.com/n3/browser/n3.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@inrupt/solid-client-authn-browser@2.2.6/dist/solid-client-authn.bundle.js"></script>
         <script src="work.js"></script>
         <script src="init.js"></script>
