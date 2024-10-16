@@ -42,7 +42,8 @@ async function logout() {
 
 // write unordered list in index
 function display(bookmark) {
-    document.getElementById('items').appendChild(bookmark);
+    //document.getElementById('items').appendChild(bookmark);
+console.log('display function called');
 }
 
 // ------------------------------------------------------------------

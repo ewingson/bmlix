@@ -1,6 +1,6 @@
 // main template solid-work document_resource
 
-let user, bookmarksContainerUrl, bookmark, i;
+let user, bookmarksContainerUrl, bookmarks, bookmark;
 
 async function restoreSession() {
     // This function uses Inrupt's authentication library to restore a previous session. If you were
@@ -62,8 +62,10 @@ async function performLogout() {
 }
 
 // button click goes here
-function gatherData(bookmark) { 
+function gatherData() { 
 
+var i;
+console.log('function called');
 // declare array bookmarks
 const bookmarks = ['eins', 'zwei', 'drei'];
 // loop over array
@@ -71,8 +73,11 @@ for (i = 0; i < 3; i++) {
 
 var bookmark = bookmarks[i];
 display(bookmark);
-
 }
+console.log('loop done now display');
+document.getElementById('items').innerHTML = `test`;
+console.log('ul written');
+
 }
 
         // tasksContainerUrl = `${user.storageUrl}tasks/`;
