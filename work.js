@@ -62,8 +62,17 @@ async function performLogout() {
 }
 
 // button click goes here
-function gatherData(bookmark) {  
+function gatherData(bookmark) { 
 
+// declare array bookmarks
+const bookmarks = ['eins', 'zwei', 'drei'];
+// loop over array
+for (i = 0; i < 3; i++) {
+
+var bookmark = bookmarks[i];
+display(bookmark);
+
+}
 }
 
         // tasksContainerUrl = `${user.storageUrl}tasks/`;
