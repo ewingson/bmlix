@@ -141,6 +141,13 @@ async function updateSolidDocument(url, update) {
         throw new Error(`Failed updating document at ${url}, returned status ${response.status}`);
 }
 
+async function deleteSolidDocument(url) {
+    const response = await solidClientAuthentication.fetch(url, { method: 'DELETE' });
+
+    if (!isSuccessfulStatusCode(response.status))
+        throw new Error(`Failed deleting document at ${url}, returned status ${response.status}`);
+}
+
 async function createSolidContainer(url, name) {
     const response = await solidClientAuthentication.fetch(url, {
         method: 'POST',
