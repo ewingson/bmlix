@@ -43,8 +43,15 @@ async function logout() {
 // write unordered list in index
 function display(bookmark) {
 	console.log('display function called');
+	const node = document.createElement("li");
+	console.log('node li created');
+	const textnode = document.createTextNode(bookmark);
+	console.log('textnode created');
+	node.appendChild(textnode);
+	console.log('textnode appended to node li');
+	//document.getElementById("myList").appendChild(node);
 	// needs to be type node
-    document.getElementById('items').appendChild(bookmark);
+    document.getElementById('items').appendChild(node);
 	console.log('written child');
 }
 

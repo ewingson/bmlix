@@ -1,5 +1,5 @@
 // main template solid-work document_resource
-// ToDo : where declare vars, examine async
+// ToDo : examine async functions
 
 let user, bookmarksContainerUrl;
 
@@ -69,6 +69,7 @@ var i;
 console.log('function gatherData called');
 // declare array bookmarks
 const bookmarks = ['eins', 'zwei', 'drei'];
+console.log('array created');
 // loop over array
 for (i = 0; i < 3; i++) {
 var bookmark = bookmarks[i];
@@ -77,7 +78,7 @@ display(bookmark);
 console.log('returned to work resource');
 }
 console.log('loop done now display test after loop');
-document.getElementById('items').innerHTML = `test`;
+display('test');
 console.log('ul written');
 
 }
