@@ -42,9 +42,10 @@ async function logout() {
 
 // write unordered list in index
 function display(bookmark) {
+	console.log('display function called');
 	// needs to be type node
-    //document.getElementById('items').appendChild(bookmark);
-console.log('display function called');
+    document.getElementById('items').appendChild(bookmark);
+	console.log('written child');
 }
 
 // ------------------------------------------------------------------

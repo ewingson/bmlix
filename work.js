@@ -72,9 +72,11 @@ const bookmarks = ['eins', 'zwei', 'drei'];
 // loop over array
 for (i = 0; i < 3; i++) {
 var bookmark = bookmarks[i];
+console.log('now call display function');
 display(bookmark);
+console.log('returned to work resource');
 }
-console.log('loop done now display');
+console.log('loop done now display test after loop');
 document.getElementById('items').innerHTML = `test`;
 console.log('ul written');
 
