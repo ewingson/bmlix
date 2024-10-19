@@ -1,7 +1,7 @@
 // main template solid-work document_resource
 // ToDo : where declare vars, examine async
 
-let user, bookmarksContainerUrl, bookmarks, bookmark;
+let user, bookmarksContainerUrl;
 
 async function restoreSession() {
     // This function uses Inrupt's authentication library to restore a previous session. If you were
